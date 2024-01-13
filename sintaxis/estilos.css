@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+
+body {
+    background-color: #ccc;
+}
+
+hr {
+    border-color: #111;
+}
+.lenguaje {
+    color: rgb(251, 255, 0);
+}
+h1{
+    font-family: 'Skranji', system-ui;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-family: 'Skranji', system-ui;
+    font-weight: 400;
+}
