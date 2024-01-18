@@ -331,15 +331,15 @@ const multiplcar = function(n1, n2){
 
 //Funciones Flechas
 //=================================
-let sumar = (num1, num2)=>{
+const sumar = (num1, num2)=>{
     return num1 + num2;
 };
 
-let restar = (n1, n2)=> {
+const restar = (n1, n2)=> {
     return n1 - n2;
 };
 
-let multiplicar = (num1, num2)=>{
+const multiplicar = (num1, num2)=>{
     return num1 * num2;
 };
 
@@ -348,9 +348,37 @@ const saludar = nombre => { //si solo es un parametro, sin parentesis
 };
 
 //Si solo es 1 instruccion podemos realizar esta funcion
-let saludo = nombre => console.log(`Bienvenido ${nombre}`);
+const saludo = nombre => console.log(`Bienvenido ${nombre}`);
 
-let mensaje = usuario => "Estas avanzando en la programacion con JS";
+const mensaje = usuario => "Estas avanzando en la programacion con JS";
 
 saludar("ENRIQUE");
 console.log(mensaje("rasek2030"));
+
+const esUnAdulto = (edad) => {
+    if(edad >= 18){
+        console.log("Eres mayor de edad, tienes " + edad);
+    }else{
+        console.log("No eres mayor de edad, tienes " + edad);
+    }
+}
+
+const estasTrabajando = (trabaja)=> {
+    if(trabaja){
+        console.log("La persona ya se encuentra trabajando");
+    }else{
+        console.log("La persona no tiene trabajo");
+    }
+}
+
+const estasEstudiando = (estudia)=> {
+    if(estudia){
+        console.log(`La persona esta estudiando`);
+    }else{
+        console.log("La persona no estudia");
+    }
+}
+
+esUnAdulto(27);
+estasTrabajando(false);
+estasEstudiando(true);
