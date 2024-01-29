@@ -97,3 +97,43 @@ titulo.setAttribute("contentEditable", "true");
 
 const subTitulo = document.querySelector(".subTitulo");
 subTitulo.removeAttribute("hidden");
+
+const parrafo = document.querySelector(".parrafo");
+parrafo.setAttribute("tabindex", "3");
+
+titulo.setAttribute("title", "Titulo Principal de la Pagina");
+
+
+
+/**
+ * Atributos de Inputs
+ * 
+ *  - className
+ *  - value
+ *  - type
+ *  - accept
+ *  - form
+ *  - minlength
+ *  - placeholder
+ *  - required
+ */
+
+
+const inputNormal = document.querySelector(".input-normal");
+console.log(`Nombre de la clase del input: ` + inputNormal.className);
+console.log(`El valor del input: ` + inputNormal.value);
+//modificando el tipo del input
+inputNormal.type = "password";
+inputNormal.type = "email";
+inputNormal.setAttribute("value", "Escribe tu correo electronico");
+
+
+const files = document.querySelector(".files");
+files.accept = "image/jpg";
+
+const nombre = document.querySelector(".input-nombre");
+nombre.minLength = 10;
+
+const input_nombre = document.querySelector(".nombre");
+input_nombre.placeholder = "Escribe tu nombre";
+input_nombre.required = "true";
